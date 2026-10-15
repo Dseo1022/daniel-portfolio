@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Seo | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Daniel Seo</h1>
+  <p>I’m a software developer who likes building things end to end, from game mechanics to AWS infrastructure.</p>
+</header>
+
+<nav>
+  <button class="nav-tab active" data-target="projects">Projects</button>
+  <button class="nav-tab" data-target="experience">Experience</button>
+  <button class="nav-tab" data-target="education">Education</button>
+  <button class="nav-tab" data-target="skills">Skills</button>
+  <button class="nav-tab" data-target="contact">Contact</button>
+</nav>
+
+<main>
+  <section id="projects" class="page active">
+    <h2>Projects</h2>
+
+    <div class="tabs">
+      <button class="tab active" data-target="song-quiz">Song Quiz</button>
+      <button class="tab" data-target="dont-look-back">Don't Look Back</button>
+      <button class="tab" data-target="aws-app">AWS Web App</button>
+      <button class="tab" data-target="smart-bytes">Smart Bytes</button>
+    </div>
+
+    <article id="song-quiz" class="panel active">
+      <h3>Song Quiz</h3>
+      <p>Python | Winner, Best Overall (Grandest Prize) at &amp;Hacks XI | Sep 2025</p>
+      <ul>
+        <li>Co-developed a music guessing game that plays random songs from public playlists using the Spotify and YouTube APIs.</li>
+        <li>Built the core game framework and the API integration for song retrieval, audio playback, and playlist shuffling.</li>
+        <li>Designed and drew all the sprites, animations, and visual assets.</li>
+      </ul>
+    </article>
+
+    <article id="dont-look-back" class="panel">
+      <h3>Don't Look Back</h3>
+      <p>Unity, C#, Blender, Audacity | Oct 2025 to present</p>
+      <ul>
+        <li>Solo developer on a game, handling design, programming, and the full development cycle.</li>
+        <li>Built the core gameplay systems and mechanics in C# using Unity.</li>
+        <li>Created the 3D assets in Blender and the audio in Audacity.</li>
+      </ul>
+    </article>
+
+    <article id="aws-app" class="panel">
+      <h3>Student Records Web App on AWS</h3>
+      <p>CloudFormation, EC2, DynamoDB, ALB, VPC, Node.js | March 2026</p>
+      <ul>
+        <li>Deployed a multi-tier AWS architecture with CloudFormation, provisioning 10+ resources to host a full-stack Node.js app.</li>
+        <li>Added an Application Load Balancer and Auto Scaling Group that scales EC2 instances based on CPU utilization.</li>
+        <li>Migrated the database from RDS MySQL to DynamoDB, rewriting the data access layer with AWS SDK v3.</li>
+      </ul>
+    </article>
+
+    <article id="smart-bytes" class="panel">
+      <h3>Smart Bytes Dining Decision Support System</h3>
+      <p>HCI, UX Research, Prototyping | Aug to Dec 2025</p>
+      <ul>
+        <li>Ran user research with 29 undergraduates and turned the findings into 7 design requirements.</li>
+        <li>Built an iterative prototype with real-time menus, allergen filtering, and peer meal ratings.</li>
+        <li>Co-authored an ACM-format research paper on the full design process.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="experience" class="page">
+    <h2>Experience</h2>
+
+    <article>
+      <h3>Marketing Director, Korea Zero Foundation</h3>
+      <p>Non-profit | 2023 to present</p>
+      <ul>
+        <li>Direct marketing strategy for a nonprofit honoring Korean War veterans through digital storytelling.</li>
+        <li>Create and produce original video content from veteran interviews and stories.</li>
+        <li>Design and manage social media content on Instagram, Facebook, and LinkedIn.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Inventory Associate, CarMax</h3>
+      <p>May 2025 to present</p>
+      <ul>
+        <li>Process and organize inventory for 100+ vehicles each week.</li>
+        <li>Coordinate vehicle positioning and lot organization, working with a cross-functional team on safety protocols.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="education" class="page">
+    <h2>Education</h2>
+    <h3>College of William &amp; Mary</h3>
+    <p>B.S. in Computer Science, minor in Data Science. Williamsburg, VA. May 2026.</p>
+    <p>GPA: 3.52 | Cum Laude | Dean's List (5 semesters)</p>
+  </section>
+
+  <section id="skills" class="page">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, Java, C, C++, C#, SQL, JavaScript, TypeScript, HTML/CSS</li>
+      <li><strong>Cloud and DevOps:</strong> AWS (EC2, RDS, DynamoDB, VPC, ALB, Auto Scaling, CloudFormation), AWS SDK v3, Linux, Git</li>
+      <li><strong>Creative and media tools:</strong> Unity, Blender, Audacity, Adobe Premiere, CapCut</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="page">
+    <h2>Contact</h2>
+    <p>Richmond, VA</p>
+    <p><a href="mailto:seo.daniel1022@gmail.com">seo.daniel1022@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/danielseo1022">LinkedIn</a></p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
