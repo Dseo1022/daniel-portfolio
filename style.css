@@ -1,27 +1,24 @@
 :root {
-  color-scheme: light dark;
-  --bg: #fafafa;
-  --text: #1a1a1a;
-  --muted: #555555;
-  --accent: #115740;
-  --border: #dddddd;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #101513;
-    --text: #e8ece9;
-    --muted: #a3aea8;
-    --accent: #6cc3a0;
-    --border: #2a332e;
-  }
+  color-scheme: dark;
+  --bg: #03040a;
+  --text: #e8ecf8;
+  --muted: #9ba5c2;
+  --accent: #7dd3fc;
+  --border: rgba(255, 255, 255, 0.14);
 }
 
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(76, 56, 160, 0.35), transparent 50%),
+    radial-gradient(ellipse at 85% 80%, rgba(10, 90, 120, 0.3), transparent 55%),
+    linear-gradient(180deg, #03040a, #070a1a);
+  background-size: auto, auto, auto;
+  background-attachment: fixed;
+  min-height: 100vh;
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
@@ -142,12 +139,55 @@ nav {
   display: block;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2.25rem;
-  }
-
-  body {
-    padding: 1.5rem 1rem;
-  }
+/* Song Quiz robot sprite */
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
 }
+
+.project-head > div {
+  max-width: 22rem;
+}
+
+.sprite {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+/* Education: cypher next to degree details */
+.school {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.school-logo {
+  width: 72px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.school p {
+  margin: 0.25rem 0;
+}
+
+/* Twinkling stars */
+#stars {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.15;
+  animation: twinkle

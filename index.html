@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<div id="stars" aria-hidden="true"></div>
+
 <header>
   <h1>Daniel Seo</h1>
   <p>I’m a software developer who likes building things end to end, from game mechanics to AWS infrastructure.</p>
@@ -33,12 +35,18 @@
     </div>
 
     <article id="song-quiz" class="panel active">
-      <h3>Song Quiz</h3>
-      <p>Python | Winner, Best Overall (Grandest Prize) at &amp;Hacks XI | Sep 2025</p>
+      <div class="project-head">
+        <div>
+          <h3>Song Quiz</h3>
+          <p>Python | Winner, Best Overall (Grandest Prize) at &amp;Hacks XI | Sep 2025</p>
+        </div>
+        <img src="images/dancingRob.gif" alt="Pixel art robot dancing, a sprite from Song Quiz" class="sprite">
+      </div>
       <ul>
         <li>Co-developed a music guessing game that plays random songs from public playlists using the Spotify and YouTube APIs.</li>
         <li>Built the core game framework and the API integration for song retrieval, audio playback, and playlist shuffling.</li>
         <li>Designed and drew all the sprites, animations, and visual assets.</li>
+        <li><a href="https://devpost.com/software/song-quiz-0oxdcw" target="_blank" rel="noopener">View the project on Devpost</a></li>
       </ul>
     </article>
 
@@ -77,7 +85,7 @@
     <h2>Experience</h2>
 
     <article>
-      <h3>Marketing Director, Korea Zero Foundation</h3>
+      <h3>Marketing Director, <a href="https://koreazerofoundation.org/" target="_blank" rel="noopener">Korea Zero Foundation</a></h3>
       <p>Non-profit | 2023 to present</p>
       <ul>
         <li>Direct marketing strategy for a nonprofit honoring Korean War veterans through digital storytelling.</li>
@@ -98,9 +106,14 @@
 
   <section id="education" class="page">
     <h2>Education</h2>
-    <h3>College of William &amp; Mary</h3>
-    <p>B.S. in Computer Science, minor in Data Science. Williamsburg, VA. May 2026.</p>
-    <p>GPA: 3.52 | Cum Laude | Dean's List (5 semesters)</p>
+    <div class="school">
+      <img src="images/WMcypher.png" alt="William &amp; Mary cypher" class="school-logo">
+      <div>
+        <h3>College of William &amp; Mary</h3>
+        <p>B.S. in Computer Science, minor in Data Science. Williamsburg, VA. May 2026.</p>
+        <p>GPA: 3.52 | Cum Laude | Dean's List (5 semesters)</p>
+      </div>
+    </div>
   </section>
 
   <section id="skills" class="page">
